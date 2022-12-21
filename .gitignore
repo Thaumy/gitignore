@@ -1,4 +1,4 @@
-# compiled
+# bin
 *.class
 *.com
 *.dll
@@ -8,7 +8,7 @@
 *.o
 *.a
 
-# package
+# archive
 *.dmg
 *.iso
 *.jar
@@ -17,29 +17,36 @@
 *.zip
 *.7z
 *.gz
+*.xz
 
 # log
+lerna-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+npm-debug.log*
 *.log
 
 # os
 System Volume Information
 .Spotlight-V100
 $Recycle.Bin
-.Trash-1000
 ehthumbs.db
+.Trash-1000
 .DS_Store?
 .DS_Store
 Thumbs.db
 .Trashes
 ._*
 
-# node
-dist_electron
+# pkg manager
 node_modules
-dist
+.gradle
+.nuget
+.yarn
+.npm
 
 # editor
-.gradle
 .vscode
 .idea
 .vs
@@ -53,6 +60,10 @@ cmake-build-debug-coverage
 cmake-build-debug
 
 # build
+dist_electron
+.output
 build
+.nuxt
+dist
 bin
 obj
